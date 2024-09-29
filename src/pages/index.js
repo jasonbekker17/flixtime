@@ -1,18 +1,7 @@
-import React from 'react'
-import MovieList from './MovieList'
-import MovieDescription from './MovieDescription'
-import PageNotFound from './PageNotFound'
-import Search from './Search'
+export { default as MovieList } from './MovieList';
+export { default as MovieDescription } from './MovieDescription';
+export { default as PageNotFound } from './PageNotFound';
+export { default as Search } from './Search';
 
-function index() {
-  return (
-    <div>
-      <MovieList/>
-      <MovieDescription/>
-      <PageNotFound/>
-      <Search/>
-    </div>
-  )
-}
 
-export default index
+
