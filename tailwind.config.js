@@ -3,7 +3,15 @@ module.exports = {
   darkMode: 'selector',
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        "other":{'min':'340','max':'1200px'},
+
+      },
+      colors:{
+        "darkbg":"#1E293B",
+      }
+    },
   },
   plugins: [],
 }

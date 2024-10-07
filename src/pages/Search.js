@@ -10,7 +10,7 @@ function Search({api}) {
   return (
     <main>
       <section>
-        <p className='text-3xl'>{movies.length===0?`No results for ${queryTerm}`:`Results for ${queryTerm}`}</p>
+        <p className='text-3xl dark:text-white'>{movies.length===0?`No results for ${queryTerm}`:`Results for ${queryTerm}`}</p>
       </section>
         <section className='max-w-7xl mx-auto py-7'>
           

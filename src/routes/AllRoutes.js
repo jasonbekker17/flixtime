@@ -6,8 +6,9 @@ import Header from "../components/Header";
 
 function AllRoutes() {
   return (
-   <>
+   <div className="dark:bg-darkbg">
    <Routes>
+    
             
             <Route path="/"  element={<MovieList api="movie/now_playing"/> }/>
             <Route path="/movie/:id"  element={<MovieDescription/>}/>
@@ -17,8 +18,8 @@ function AllRoutes() {
             <Route path="/search"  element={<Search api="/search/multi"/>}/>
             <Route path="*"  element={<PageNotFound/>}/>
             
-        </Routes>
-   </>
+    </Routes>
+   </div>
   )
 }
 
