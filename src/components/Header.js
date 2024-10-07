@@ -37,9 +37,7 @@ function Header() {
   <path fillRule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clipRule="evenodd"/>
 </svg>
 )}
-                
-
-                    
+                          
                 </button>
                     
                     
@@ -65,31 +63,34 @@ function Header() {
                         </svg>
                     </button>
                 </div>
-
+                    
                     <div id='nav-links'  className={`items-center justify-between ${hidden ? "hidden":""} w-full md:flex md:w-auto md:order-1"`} >
+                    
                     <div className="relative mt-3 md:hidden">
+
                         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            
                         <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                         </div>
-                        <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." autoComplete='off'/>
+                              
+                        <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." autoComplete='off'/>             
                     </div>
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        
+                   
                         <li>
                         <NavLink to="/" className={({isActive})=>isActive?activeClass:inActiveClass} end>Home</NavLink>
                         </li> 
                         <li>
-
                         <NavLink to="/movies/popular"className={({isActive})=>isActive?activeClass:inActiveClass}>Popular</NavLink>
                         </li>
+                        
                         <li>
-                            
-                        <NavLink to="/movies/now" className={({isActive})=>isActive?activeClass:inActiveClass}>Now Playing</NavLink>
+                        <NavLink to="/movies/top_rated" className={({isActive})=>isActive?activeClass:inActiveClass}>Top Rated </NavLink>
                         </li>
                         <li>
-                        <NavLink to="/movies/top" className={({isActive})=>isActive?activeClass:inActiveClass}>Top Rated </NavLink>
+                        <NavLink to="/movies/upcoming" className={({isActive})=>isActive?activeClass:inActiveClass}>Up Coming </NavLink>
                         </li>
                     </ul>
                     </div>
