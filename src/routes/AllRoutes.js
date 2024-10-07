@@ -14,7 +14,7 @@ function AllRoutes() {
             <Route path="/movies/popular"  element={<MovieList api="movie/popular"/>}/>
             <Route path="/movies/top_rated"  element={<MovieList  api="movie/top_rated"/>}/>
             <Route path="/movies/upcoming"  element={<MovieList api="/movie/upcoming"/>}/>
-            <Route path="/search"  element={<Search/>}/>
+            <Route path="/search"  element={<Search api="/search/multi"/>}/>
             <Route path="*"  element={<PageNotFound/>}/>
             
         </Routes>
