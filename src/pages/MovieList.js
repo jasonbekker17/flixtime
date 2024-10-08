@@ -15,11 +15,7 @@ function MovieList({api}) {
           <div className='flex justify-start flex-wrap other:justify-evenly'>
                 {movies.map((movie)=>(
                   <MovieCard key={movie.id} movie={movie}/>
-                ))}
-                
-                
-                
-
+                ))}         
           </div>
         </section>
     

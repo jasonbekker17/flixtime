@@ -11,7 +11,7 @@ function AllRoutes() {
     
             
             <Route path="/"  element={<MovieList api="movie/now_playing"/> }/>
-            <Route path="/movie/:id"  element={<MovieDescription/>}/>
+            <Route path="/movie/:id"  element={<MovieDescription api="movie/movie_id"/>}/>
             <Route path="/movies/popular"  element={<MovieList api="movie/popular"/>}/>
             <Route path="/movies/top_rated"  element={<MovieList  api="movie/top_rated"/>}/>
             <Route path="/movies/upcoming"  element={<MovieList api="/movie/upcoming"/>}/>
