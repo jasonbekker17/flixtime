@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+
 import useFetch from '../hooks/useFetch'
 import MovieCard from '../components/MovieCard'
 import { useSearchParams } from 'react-router-dom';
