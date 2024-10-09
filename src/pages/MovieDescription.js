@@ -6,7 +6,7 @@ function MovieDescription() {
   const params = useParams();
   const [movie, setMovie] = useState(null);  // Use `null` instead of an empty object
   const url = `https://api.themoviedb.org/3/movie/${params.id}?language=en-US`;
-
+  
   useEffect(() => {
     const options = {
       method: 'GET',
@@ -15,6 +15,9 @@ function MovieDescription() {
         Authorization: `Bearer ${process.env.REACT_APP_TMDB_API_KEY}`,
       },
     };
+   
+      
+   
 
     async function fetchMovies() {
       try {
@@ -24,21 +27,36 @@ function MovieDescription() {
         }
         const json = await response.json();
         setMovie(json);
+        
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     }
 
     fetchMovies();
-  }, [url]);
+
+    
+      
+    
+  }, []);
+  
+  
+
 
   if (!movie) return <p>Loading...</p>;  // Handle loading state
-
+ 
+  
   const image = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+    
+    
     : backupimg;
+    document.title=movie.title
+    
 
+    
   return (
+    
     <main>
       <section className="flex justify-around flex-wrap py-5">
         <div className="max-w-sm">

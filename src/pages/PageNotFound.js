@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import  PageNotFoundImg  from '../Assets/404.png' 
 import { Link } from 'react-router-dom'
-function PageNotFound() {
+function PageNotFound({title}) {
+
+  useEffect(() =>{
+    document.title=title;
+  })
   return (
    <main>
     <section className='flex flex-col justify-center px-2'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Link,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -18,10 +18,10 @@ function Footer() {
                     <NavLink to="/movies/popular" className="hover:underline me-4 md:me-6">Popluar</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/movies/now" className="hover:underline">Now Playing</NavLink>
+                    <NavLink to="/movies/top_rated" className="hover:underline">Top Rated</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/movies/top" className="hover:underline me-4 md:me-6">Top Rated</NavLink>
+                    <NavLink to="/movies/upcoming" className="hover:underline me-4 md:me-6">Up Coming</NavLink>
                 </li>
                
     </ul>

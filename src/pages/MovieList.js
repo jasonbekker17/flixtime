@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+
 import MovieCard from '../components/MovieCard'
 import useFetch from '../hooks/useFetch'
+import useTitle from '../hooks/useTitle';
 
-function MovieList({api}) {
+function MovieList({api,title}) {
 
   const {data:movies}=useFetch(api);
-
+useTitle(`${title}`)
 
 
   return (
